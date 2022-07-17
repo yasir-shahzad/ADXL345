@@ -1,13 +1,14 @@
-#include <iostream>
+// Distributed with a free-will license.
+// Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
+// ADXL345
+// This code is designed to work with the ADXL345_I2CS I2C Mini Module available from ControlEverything.com.
+// https://www.controleverything.com/content/Accelorometer?sku=ADXL345_I2CS#tabs-0-product_tabset-2
+
+#include <stdio.h>
+#include <stdlib.h>
 #include <linux/i2c-dev.h>
-#include <linux/i2c.h>
-#include <i2c/smbus.h>
-#include <fcntl.h>
 #include <sys/ioctl.h>
-#include <string.h>
-#include <stdint.h>
-#include <unistd.h>
-#include <math.h>
+#include <fcntl.h>
 
 using namespace std;
 
