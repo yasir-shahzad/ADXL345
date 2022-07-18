@@ -75,14 +75,9 @@ void ADXL345::RollandPitch(float& roll, float& pitch) {
 		}
 	}
 		// Output data to screen
-	//	printf("Acceleration in X-Axis : %d \n", xAccl);
-	//	printf("Acceleration in Y-Axis : %d \n", yAccl);
-	//	printf("Acceleration in Z-Axis : %d \n", zAccl);
-
-
-        xAccl  = atan(-1 * xAccl / sqrt(pow(yAccl, 2) + pow(zAccl, 2))) * 180 / M_PI;
-	    yAccl = atan(yAccl/sqrt(pow(xAccl,2) + pow(zAccl, 2))) * 180 / M_PI;
-	
+		printf("Acceleration in X-Axis : %d \n", xAccl);
+		printf("Acceleration in Y-Axis : %d \n", yAccl);
+		printf("Acceleration in Z-Axis : %d \n", zAccl);
 
 }
 ADXL345::~ADXL345() {
